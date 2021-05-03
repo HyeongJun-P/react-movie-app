@@ -1,10 +1,23 @@
-import React from 'react';
-import Potato from './components/Potato';
+import React, {Component} from 'react';
 
-function App() {
-  <div className="App">
-      <Potato />
-  </div>
+class App extends Component {
+  state = {
+    isLoading: true,
+    movies: []
+  };
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ isLoading: false});
+    }, 6000);
+  }
+  render() {
+    const { isLoading } = this.state;
+    return(
+      <div className="">
+        {isLoading ? "Loading..." : "We are ready"}
+      </div>
+    );
+  }
 }
 
 export default App;
