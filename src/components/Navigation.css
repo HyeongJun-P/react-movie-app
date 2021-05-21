@@ -13,15 +13,12 @@
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   border-radius: 5px;
 }
-
-@media screen and (max-width: 1090px) {
   .nav {
     left: initial;
     top: initial;
     bottom: 0px;
     width: 100%;
   }
-}
 
 .nav a {
   text-decoration: none;
